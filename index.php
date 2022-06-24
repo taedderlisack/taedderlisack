@@ -5,9 +5,9 @@
 	<body>
 <?php
 
-require '/srv/http/markdown_file.php';
+require './src/markdown_file.php';
 
-$md = new MarkdownFile('posts/example.md');
+$md = new MarkdownFile('content/example.md');
 $header = $md->header();
 $tag = $header->item('tag');
 
