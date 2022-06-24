@@ -5,7 +5,7 @@
 	<body>
 <?php
 
-require './src/markdown_file.php';
+require __DIR__ . '/src/markdown_file.php';
 
 $md = new MarkdownFile('content/example.md');
 $header = $md->header();
