@@ -2,13 +2,13 @@
 
 $md = "";
 
-function snipped($name) {
-	global $md;
+function snippet($name) {
+	global $md, $config;
 	include '_snippets/' . $name . '.php';
 }
 
 function layout($name) {
-	global $md;
+	global $md, $config;
 	include '_layouts/' . $name . '.php';
 }
 

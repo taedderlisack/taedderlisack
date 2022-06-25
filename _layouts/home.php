@@ -1,7 +1,5 @@
 <html>
-	<head>
-		<title>Home</title>
-	</head>
+	<?php snippet('head') ?>
 	<body>
 		</div>
 			<h1>Home</h1>
