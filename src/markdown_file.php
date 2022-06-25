@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 class HeaderElement {
 	private $key_;
@@ -70,12 +70,16 @@ class MarkdownFile {
 		$this->content_ = $parser->text($fcontent);
 	}
 
-	function content() {
+	function content_as_string() {
 		return $this->content_;
 	}
 
 	function header() {
 		return $this->header_;
+	}
+
+	function content() {
+		echo $this->content_;
 	}
 }
 

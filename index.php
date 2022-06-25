@@ -1,20 +1,10 @@
-<html>
-	<head>
-		<title>n8</title>
-	</head>
-	<body>
 <?php
 
-require __DIR__ . '/src/markdown_file.php';
+set_include_path(__DIR__);
 
-$md = new MarkdownFile('content/example.md');
-$header = $md->header();
-$tag = $header->item('tag');
+require 'src/markdown_file.php';
+require 'src/uri.php';
 
-echo $md->content();
-
-echo $_SERVER['REQUEST_URI'];
+handle_uri();
 
 ?>
-	</body>
-	</html>
