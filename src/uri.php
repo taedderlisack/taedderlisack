@@ -24,7 +24,7 @@ function load_uri($path) {
 }
 
 function handle_uri() {
-	$request = $_SERVER['REQUEST_URI'];
+	$request = URL;
 	$uri = 'content/' . $request;
 
 	if (is_dir($uri)) {
