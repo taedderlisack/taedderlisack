@@ -1,4 +1,4 @@
 RewriteEngine on
 RewriteCond %{REQUEST_URI} !-f
 RewriteCond %{REQUEST_URI} !-d
-RewriteRule ^(.*)$ /index.php?u=$1 [END]
+RewriteRule ^(.*)$ /index.php/$1 [END]

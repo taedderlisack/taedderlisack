@@ -24,7 +24,8 @@ function load_uri($path) {
 }
 
 function handle_uri() {
-	$request = URL;
+	global $URL;
+	$request = $URL;
 	$uri = 'content/' . $request;
 
 	if (is_dir($uri)) {
@@ -34,6 +35,11 @@ function handle_uri() {
 	} else {
 		load_uri('content/404.md');
 	}
+}
+
+function uri_is_path($path) {
+	global $URL;
+	return preg_match("/^\/$path([?\/].*)?$/", $URL);
 }
 
 ?>
