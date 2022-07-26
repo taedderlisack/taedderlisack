@@ -2,7 +2,7 @@
 
 set_include_path(__DIR__);
 
-$config = parse_ini_file('config.ini');
+$config = parse_ini_file('_data/config.ini');
 
 define('URL', preg_replace('/^index.php$/', '/', $_GET['u']));
 
